@@ -37,19 +37,19 @@ void install_repo()
 int main()
 {
   char a='n';
-
-  cout<<"\n Install SDK?(y|n) ";
-  a=getchar();
-
-  if(a=='y'||a=='Y'){ install_sdk();  }
-
-  cin.ignore();
   cout<<"\n Install packages?(y|n) ";
   a=getchar();
 
   if(a=='y'||a=='Y'){ install_pkg();  }
 
   cin.ignore();
+  cout<<"\n Install SDK?(y|n) ";
+  a=getchar();
+
+  if(a=='y'||a=='Y'){ install_sdk();  }
+
+  cin.ignore();
+  
   cout<<"\n Install repo?(y|n) ";
   a=getchar();
 
