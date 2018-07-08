@@ -11,7 +11,7 @@ Use this to setup the complete system :-
 	
 	$ ./fullsetup.out
 
-Then open the ~/.bashrc file :-
+Then open the ~/.bashrc file -
 
 	$ nano ~/.bashrc
 	
@@ -37,7 +37,7 @@ For installing only SDK :-
   
 	$ ./install_sdk.out
   
-Then open the ~/.bashrc file :-
+Then open the ~/.bashrc file -
 
 	$ nano ~/.bashrc
 	
@@ -48,13 +48,21 @@ Then open the ~/.bashrc file :-
 		PATH="$HOME/platform-tools:$PATH"
 	fi
 	
+	
+	
 For installing other packages :-
   
 	$ ./install_packages.out
 
+
+
 For installing only repo :-
   
 	$ ./install_repo.out
+	
+Then open the ~/.bashrc file -
+
+	S nano ~/.bashrc
 	
 	** Search for these lines in the .bashrc file, add these if not found -
 	
