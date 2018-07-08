@@ -4,9 +4,9 @@
 using namespace std;
 void install_repo()
 {
-  cout<<"curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo";
-  cin.ignore();
+  cout<<" $ mkdir ~/bin && curl https://storage.googleapis.com/git-repo-downloas/repo > ~/bin/repo && chmod a+x ~/bin/repo";
   getchar();
+  system( "if [ ! -d \"$HOME/bin\" ]; then \n mkdir ~/bin \n fi");
   system("curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo");
   cout << endl;
 }
