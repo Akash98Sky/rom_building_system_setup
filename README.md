@@ -1,14 +1,19 @@
 # Rom Building System Setup
 ### <<< Make your System capable of custom ROM building >>>
 
+First make sure to install git and configure it, and install g++ or install it using :-
+	
+	$ sudo apt-get install git
+	$ sudo apt-get install g++ 
 
-First clone the repositoiy -->
+Then clone the repositoiy -->
   
 	$ git clone https://github.com/Akash98Sky/rom_building_system_setup -b new <any dir>
 * add any directory at the end or keep it empty
 
 Use this to setup the complete system :-
 	
+	$ g++ fullsetup.cpp -o fullsetup.out
 	$ ./fullsetup.out
 
 Then open the ~/.bashrc file -
@@ -29,7 +34,10 @@ Then open the ~/.bashrc file -
 		PATH="$HOME/platform-tools:$PATH"
 	fi
 
-	
+Then run:-
+
+	$ source ~/.bashrc
+
 ##	OR
 
 #### <<< Partial Installations >>>
@@ -48,7 +56,9 @@ Then open the ~/.bashrc file -
 		PATH="$HOME/platform-tools:$PATH"
 	fi
 	
-	
+Then run:-
+
+	$ source ~/.bashrc
 	
 For installing other packages :-
   
@@ -71,3 +81,6 @@ Then open the ~/.bashrc file -
 		PATH="$HOME/bin:$PATH"
 	fi
   
+Then run:-
+
+        $ source ~/.bashrc 
