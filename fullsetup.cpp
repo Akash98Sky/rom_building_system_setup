@@ -27,29 +27,29 @@ void install_sdk()
 
 void install_repo()
 {
-  cout<<"curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo";
+  cout<<"mkdir ~/bin/repo && curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo";
   cin.ignore();
   getchar();
-  system("curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo");
+  system("mkdir ~/bin/repo && curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo");
   cout << endl;
 }
 
 int main()
 {
   char a='n';
-
-  cout<<"\n Install SDK?(y|n) ";
-  a=getchar();
-
-  if(a=='y'||a=='Y'){ install_sdk();  }
-
-  cin.ignore();
   cout<<"\n Install packages?(y|n) ";
   a=getchar();
 
   if(a=='y'||a=='Y'){ install_pkg();  }
 
   cin.ignore();
+  cout<<"\n Install SDK?(y|n) ";
+  a=getchar();
+
+  if(a=='y'||a=='Y'){ install_sdk();  }
+
+  cin.ignore();
+  
   cout<<"\n Install repo?(y|n) ";
   a=getchar();
 
