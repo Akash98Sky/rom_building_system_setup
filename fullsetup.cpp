@@ -27,10 +27,10 @@ void install_sdk()
 
 void install_repo()
 {
-  cout<<"curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo";
+  cout<<"mkdir ~/bin/repo && curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo";
   cin.ignore();
   getchar();
-  system("curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo");
+  system("mkdir ~/bin/repo && curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo");
   cout << endl;
 }
 
