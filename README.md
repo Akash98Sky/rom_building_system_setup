@@ -16,18 +16,18 @@ Use this to setup the complete system :-
 	$ g++ fullsetup.cpp -o fullsetup.out
 	$ ./fullsetup.out
 
-Then open the ~/.bashrc file -
+Then open the ~/.profile file -
 
-	$ nano ~/.bashrc
+	$ nano ~/.profile
 	
-	** Search for these lines in the .bashrc file, add these if not found -
+	** Search for these lines in the .profile file, add these if not found -
 	
 	# set PATH so it includes user's private bin if it exists
 	if [ -d "$HOME/bin" ] ; then
 		PATH="$HOME/bin:$PATH"
 	fi
 	
-	** Again search for these lines in the .bashrc file, add these if not found -
+	** Again search for these lines in the .profile file, add these if not found -
 	
 	# add Android SDK platform tools to path
 	if [ -d "$HOME/platform-tools" ] ; then
@@ -36,7 +36,7 @@ Then open the ~/.bashrc file -
 
 Then run:-
 
-	$ source ~/.bashrc
+	$ source ~/.profile
 
 ##	OR
 
@@ -45,11 +45,11 @@ For installing only SDK :-
   
 	$ ./install_sdk.out
   
-Then open the ~/.bashrc file -
+Then open the ~/.profile file -
 
-	$ nano ~/.bashrc
+	$ nano ~/.profile
 	
-	** Search for these lines in the .bashrc file, add these if not found -
+	** Search for these lines in the .profile file, add these if not found -
 	
 	# add Android SDK platform tools to path
 	if [ -d "$HOME/platform-tools" ] ; then
@@ -58,7 +58,7 @@ Then open the ~/.bashrc file -
 	
 Then run:-
 
-	$ source ~/.bashrc
+	$ source ~/.profile
 	
 For installing other packages :-
   
@@ -70,11 +70,11 @@ For installing only repo :-
   
 	$ ./install_repo.out
 	
-Then open the ~/.bashrc file -
+Then open the ~/.profile file -
 
-	S nano ~/.bashrc
+	S nano ~/.profile
 	
-	** Search for these lines in the .bashrc file, add these if not found -
+	** Search for these lines in the .profile file, add these if not found -
 	
 	# set PATH so it includes user's private bin if it exists
 	if [ -d "$HOME/bin" ] ; then
@@ -83,4 +83,4 @@ Then open the ~/.bashrc file -
   
 Then run:-
 
-        $ source ~/.bashrc 
+        $ source ~/.profile 
