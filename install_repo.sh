@@ -17,14 +17,14 @@ then
         
         curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
 
-        if [ -z "`echo $PATH | grep $HOME/bin`" ] || [ -z "`cat ~/.profile | grep \$HOME/bin`"]
+        if [ -z "`echo $PATH | grep $HOME/bin`" ] || [ -z "`cat ~/.profile | grep '$HOME/bin'`" ]
         then
             echo ""
             echo "Adding repo to environment $PATH..."
             echo "" >> ~/.profile
             echo "# set PATH so it includes user's private bin if it exists" >> ~/.profile
             echo "if [ -d \"\$HOME/bin\" ] ; then" >> ~/.profile
-            echo "  PATH=\"\$HOME/bin:\$PATH\"" >> ~/.profile
+            echo "    PATH=\"\$HOME/bin:\$PATH\"" >> ~/.profile
             echo "fi" >> ~/.profile
         fi
         echo "repo added to $PATH..."
