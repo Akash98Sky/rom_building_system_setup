@@ -14,7 +14,6 @@ Use this to setup the complete system :-
 Then run:-
 
 	$ source ~/.profile
-	$ source ~/.bashrc
 
 ##	OR
 
